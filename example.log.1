@@ -1,0 +1,827 @@
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:07:29 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/test HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:07:29 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.HttpClient - Java version: 1.8.0_333
+DEBUG main org.apache.commons.httpclient.HttpClient - Java vendor: Oracle Corporation
+DEBUG main org.apache.commons.httpclient.HttpClient - Java class path: C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;D:\IdeaProjects\test\target\classes;D:\Program Files (x86)\maven-repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-reload4j\1.7.36\slf4j-reload4j-1.7.36.jar;D:\Program Files (x86)\maven-repository\ch\qos\reload4j\reload4j\1.2.19\reload4j-1.2.19.jar;D:\Program Files (x86)\maven-repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;D:\Program Files (x86)\maven-repository\commons-logging\commons-logging\1.0.4\commons-logging-1.0.4.jar;D:\Program Files (x86)\maven-repository\commons-codec\commons-codec\1.2\commons-codec-1.2.jar;D:\Program Files (x86)\maven-repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;D:\Program Files (x86)\maven-repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;D:\Program Files (x86)\maven-repository\com\alibaba\fastjson\1.2.83\fastjson-1.2.83.jar;D:\Program Files (x86)\maven-repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\Program Files (x86)\maven-repository\org\testng\testng\7.6.1\testng-7.6.1.jar;D:\Program Files (x86)\maven-repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;D:\Program Files (x86)\maven-repository\com\beust\jcommander\1.82\jcommander-1.82.jar;D:\Program Files (x86)\maven-repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;D:\Program Files (x86)\maven-repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar;D:\Program Files (x86)\maven-repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;D:\Program Files (x86)\maven-repository\com\squareup\okhttp3\okhttp\4.10.0\okhttp-4.10.0.jar;D:\Program Files (x86)\maven-repository\com\squareup\okio\okio-jvm\3.0.0\okio-jvm-3.0.0.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.5.31\kotlin-stdlib-jdk8-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.5.31\kotlin-stdlib-jdk7-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.31\kotlin-stdlib-common-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.20\kotlin-stdlib-1.6.20.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2\lib\idea_rt.jar
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system name: Windows 10
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system architecture: amd64
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system version: 10.0
+DEBUG main org.apache.commons.httpclient.HttpClient - SUN 1.8: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS & DKS keystores; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunRsaSign 1.8: Sun RSA signature provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunEC 1.8: Sun Elliptic Curve provider (EC, ECDSA, ECDH)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJSSE 1.8: Sun JSSE provider(PKCS12, SunX509/PKIX key/trust factories, SSLv3/TLSv1/TLSv1.1/TLSv1.2/TLSv1.3)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJCE 1.8: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJGSS 1.8: Sun (Kerberos v5, SPNEGO)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunSASL 1.8: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5, NTLM; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5, NTLM)
+DEBUG main org.apache.commons.httpclient.HttpClient - XMLDSig 1.8: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory; C14N 1.0, C14N 1.1, Exclusive C14N, Base64, Enveloped, XPath, XPath2, XSLT TransformServices)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunPCSC 1.8: Sun PC/SC provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunMSCAPI 1.8: Sun's Microsoft Crypto API provider
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.useragent = Jakarta Commons-HttpClient/3.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.version = HTTP/1.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.cookie-policy = default
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.element-charset = US-ASCII
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@33a10788
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/add HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:08:51 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/test HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:08:52 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.HttpClient - Java version: 1.8.0_333
+DEBUG main org.apache.commons.httpclient.HttpClient - Java vendor: Oracle Corporation
+DEBUG main org.apache.commons.httpclient.HttpClient - Java class path: C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;D:\IdeaProjects\test\target\classes;D:\Program Files (x86)\maven-repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-reload4j\1.7.36\slf4j-reload4j-1.7.36.jar;D:\Program Files (x86)\maven-repository\ch\qos\reload4j\reload4j\1.2.19\reload4j-1.2.19.jar;D:\Program Files (x86)\maven-repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;D:\Program Files (x86)\maven-repository\commons-logging\commons-logging\1.0.4\commons-logging-1.0.4.jar;D:\Program Files (x86)\maven-repository\commons-codec\commons-codec\1.2\commons-codec-1.2.jar;D:\Program Files (x86)\maven-repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;D:\Program Files (x86)\maven-repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;D:\Program Files (x86)\maven-repository\com\alibaba\fastjson\1.2.83\fastjson-1.2.83.jar;D:\Program Files (x86)\maven-repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\Program Files (x86)\maven-repository\org\testng\testng\7.6.1\testng-7.6.1.jar;D:\Program Files (x86)\maven-repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;D:\Program Files (x86)\maven-repository\com\beust\jcommander\1.82\jcommander-1.82.jar;D:\Program Files (x86)\maven-repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;D:\Program Files (x86)\maven-repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar;D:\Program Files (x86)\maven-repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;D:\Program Files (x86)\maven-repository\com\squareup\okhttp3\okhttp\4.10.0\okhttp-4.10.0.jar;D:\Program Files (x86)\maven-repository\com\squareup\okio\okio-jvm\3.0.0\okio-jvm-3.0.0.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.5.31\kotlin-stdlib-jdk8-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.5.31\kotlin-stdlib-jdk7-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.31\kotlin-stdlib-common-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.20\kotlin-stdlib-1.6.20.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2\lib\idea_rt.jar
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system name: Windows 10
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system architecture: amd64
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system version: 10.0
+DEBUG main org.apache.commons.httpclient.HttpClient - SUN 1.8: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS & DKS keystores; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunRsaSign 1.8: Sun RSA signature provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunEC 1.8: Sun Elliptic Curve provider (EC, ECDSA, ECDH)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJSSE 1.8: Sun JSSE provider(PKCS12, SunX509/PKIX key/trust factories, SSLv3/TLSv1/TLSv1.1/TLSv1.2/TLSv1.3)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJCE 1.8: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJGSS 1.8: Sun (Kerberos v5, SPNEGO)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunSASL 1.8: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5, NTLM; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5, NTLM)
+DEBUG main org.apache.commons.httpclient.HttpClient - XMLDSig 1.8: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory; C14N 1.0, C14N 1.1, Exclusive C14N, Base64, Enveloped, XPath, XPath2, XSLT TransformServices)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunPCSC 1.8: Sun PC/SC provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunMSCAPI 1.8: Sun's Microsoft Crypto API provider
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.useragent = Jakarta Commons-HttpClient/3.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.version = HTTP/1.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.cookie-policy = default
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.element-charset = US-ASCII
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@33a10788
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/add HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:09:18 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/test HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:09:18 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.HttpClient - Java version: 1.8.0_333
+DEBUG main org.apache.commons.httpclient.HttpClient - Java vendor: Oracle Corporation
+DEBUG main org.apache.commons.httpclient.HttpClient - Java class path: C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;D:\IdeaProjects\test\target\classes;D:\Program Files (x86)\maven-repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;D:\Program Files (x86)\maven-repository\org\slf4j\slf4j-reload4j\1.7.36\slf4j-reload4j-1.7.36.jar;D:\Program Files (x86)\maven-repository\ch\qos\reload4j\reload4j\1.2.19\reload4j-1.2.19.jar;D:\Program Files (x86)\maven-repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;D:\Program Files (x86)\maven-repository\commons-logging\commons-logging\1.0.4\commons-logging-1.0.4.jar;D:\Program Files (x86)\maven-repository\commons-codec\commons-codec\1.2\commons-codec-1.2.jar;D:\Program Files (x86)\maven-repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;D:\Program Files (x86)\maven-repository\org\jsoup\jsoup\1.14.3\jsoup-1.14.3.jar;D:\Program Files (x86)\maven-repository\com\alibaba\fastjson\1.2.83\fastjson-1.2.83.jar;D:\Program Files (x86)\maven-repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;D:\Program Files (x86)\maven-repository\org\testng\testng\7.6.1\testng-7.6.1.jar;D:\Program Files (x86)\maven-repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;D:\Program Files (x86)\maven-repository\com\beust\jcommander\1.82\jcommander-1.82.jar;D:\Program Files (x86)\maven-repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;D:\Program Files (x86)\maven-repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar;D:\Program Files (x86)\maven-repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;D:\Program Files (x86)\maven-repository\com\squareup\okhttp3\okhttp\4.10.0\okhttp-4.10.0.jar;D:\Program Files (x86)\maven-repository\com\squareup\okio\okio-jvm\3.0.0\okio-jvm-3.0.0.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.5.31\kotlin-stdlib-jdk8-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.5.31\kotlin-stdlib-jdk7-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.5.31\kotlin-stdlib-common-1.5.31.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\kotlin\kotlin-stdlib\1.6.20\kotlin-stdlib-1.6.20.jar;D:\Program Files (x86)\maven-repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2022.2\lib\idea_rt.jar
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system name: Windows 10
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system architecture: amd64
+DEBUG main org.apache.commons.httpclient.HttpClient - Operating system version: 10.0
+DEBUG main org.apache.commons.httpclient.HttpClient - SUN 1.8: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS & DKS keystores; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunRsaSign 1.8: Sun RSA signature provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunEC 1.8: Sun Elliptic Curve provider (EC, ECDSA, ECDH)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJSSE 1.8: Sun JSSE provider(PKCS12, SunX509/PKIX key/trust factories, SSLv3/TLSv1/TLSv1.1/TLSv1.2/TLSv1.3)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJCE 1.8: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunJGSS 1.8: Sun (Kerberos v5, SPNEGO)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunSASL 1.8: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5, NTLM; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5, NTLM)
+DEBUG main org.apache.commons.httpclient.HttpClient - XMLDSig 1.8: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory; C14N 1.0, C14N 1.1, Exclusive C14N, Base64, Enveloped, XPath, XPath2, XSLT TransformServices)
+DEBUG main org.apache.commons.httpclient.HttpClient - SunPCSC 1.8: Sun PC/SC provider
+DEBUG main org.apache.commons.httpclient.HttpClient - SunMSCAPI 1.8: Sun's Microsoft Crypto API provider
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.useragent = Jakarta Commons-HttpClient/3.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.version = HTTP/1.1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.cookie-policy = default
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.element-charset = US-ASCII
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.protocol.content-charset = ISO-8859-1
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@33a10788
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/add HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:40:56 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.connection.timeout = 30000
+DEBUG main org.apache.commons.httpclient.params.DefaultHttpParams - Set parameter http.socket.timeout = 30000
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(String)
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.parseElements(char[])
+DEBUG main org.apache.commons.httpclient.HeaderElement - enter HeaderElement.getParameterByName(String)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.clearRequestBody()
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HttpMethod)
+DEBUG main org.apache.commons.httpclient.HttpClient - enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+DEBUG main org.apache.commons.httpclient.HttpMethodDirector - Attempt number 1 to process request
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.open()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Open connection to localhost:8080
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.execute(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+DEBUG main httpclient.wire.header - >> "POST /index/test HTTP/1.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.ExpectContinueMethod - enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Adding Host request header
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpState - enter HttpState.getCookies()
+DEBUG main org.apache.commons.httpclient.cookie.CookieSpec - enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - HttpMethodBase.addRequestHeader(Header)
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.renerateRequestBody()
+DEBUG main httpclient.wire.header - >> "User-Agent: Jakarta Commons-HttpClient/3.1[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Host: localhost:8080[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Length: 47[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.print(String)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.writeLine()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[])
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.write(byte[], int, int)
+DEBUG main httpclient.wire.header - >> "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.getRequestContentLength()
+DEBUG main org.apache.commons.httpclient.methods.PostMethod - enter PostMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - enter EntityEnclosingMethod.hasRequestContent()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getRequestOutputStream()
+DEBUG main httpclient.wire.content - >> "{"id":0,"name":"[0xe6][0xb5][0x8b][0xe8][0xaf][0x95][0xe5][0x90][0x8d]","age":1,"sex":"man"}"
+DEBUG main org.apache.commons.httpclient.methods.EntityEnclosingMethod - Request body sent
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.flushRequestOutputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.readLine()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main httpclient.wire.header - << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HeaderParser.parseHeaders(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Date: Fri, 12 Aug 2022 08:40:56 GMT[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "Content-length: 21[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readLine(InputStream, String)
+DEBUG main org.apache.commons.httpclient.HttpParser - enter HttpParser.readRawLine()
+DEBUG main httpclient.wire.header - << "[\r][\n]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.readResponseBody(HttpConnection)
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.getResponseInputStream()
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - enter HttpMethodBase.canResponseHaveBody(int)
+DEBUG main httpclient.wire.content - << "[0xe6][0x81][0xad][0xe5][0x96][0x9c][0xe4][0xbd][0xa0][0xe6][0x88][0x90][0xe5][0x8a][0x9f][0xe4][0xba][0x86][0xef][0xbc][0x81]"
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Resorting to protocol version default close connection policy
+DEBUG main org.apache.commons.httpclient.HttpMethodBase - Should NOT close connection, using HTTP/1.1
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.isResponseAvailable()
+DEBUG main org.apache.commons.httpclient.HttpConnection - enter HttpConnection.releaseConnection()
+DEBUG main org.apache.commons.httpclient.HttpConnection - Releasing connection back to connection manager.
+WARN main com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+INFO main com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+INFO main com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+INFO main com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+INFO main com.alibaba.nacos.client.identify.CredentialWatcher - null No credential found
+INFO main com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\SSY\nacos\config
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+INFO main com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]

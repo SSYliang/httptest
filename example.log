@@ -1,0 +1,336 @@
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+ERROR main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [sub-server] get server config exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=
+java.net.ConnectException: [NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:125)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:51)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:274)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:155)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:98)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:20)
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get from server error, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:[NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get snapshot ok, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, config=
+INFO main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] nacos_config.properties+DEFAULT_GROUP
+INFO main com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=nacos_config.properties, group=DEFAULT_GROUP, cnt=1
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs, body: {dataId=nacos_config.properties, type=text, content=content, group=DEFAULT_GROUP}
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs, body: {dataId=nacos_config.properties, type=text, content=content, group=DEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - no available server, currentServerAddr : http://localhost:8848
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [publish-single] exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, msg=java.net.ConnectException: no available server, currentServerAddr : http://localhost:8848
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [check-update] get changed dataId exception
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - longPolling error : 
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+WARN Thread-0 com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+WARN Thread-0 com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+WARN main com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+INFO main com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+INFO main com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+INFO main com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+INFO main com.alibaba.nacos.client.identify.CredentialWatcher - null No credential found
+INFO main com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\SSY\nacos\config
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+INFO main com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+ERROR main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [sub-server] get server config exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=
+java.net.ConnectException: [NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:125)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:51)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:274)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:155)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:98)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:20)
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get from server error, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:[NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get snapshot ok, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, config=
+INFO main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [subscribe] nacos_config.properties+DEFAULT_GROUP
+INFO main com.alibaba.nacos.client.config.impl.CacheData - [fixed-localhost_8848] [add-listener] ok, tenant=, dataId=nacos_config.properties, group=DEFAULT_GROUP, cnt=1
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs, body: {dataId=nacos_config.properties, type=text, content=content, group=DEFAULT_GROUP}
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs, body: {dataId=nacos_config.properties, type=text, content=content, group=DEFAULT_GROUP}
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - no available server, currentServerAddr : http://localhost:8848
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [publish-single] exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, msg=java.net.ConnectException: no available server, currentServerAddr : http://localhost:8848
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [check-update] get changed dataId exception
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - longPolling error : 
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+ERROR main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [sub-server] get server config exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=
+java.net.ConnectException: [NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:125)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:51)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:274)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:155)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:98)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:38)
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get from server error, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:[NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get snapshot ok, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, config=
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: DELETE, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpDelete] currentServerAddr:http://localhost:8848， err : java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112)
+	at com.alibaba.nacos.common.http.client.InterceptingHttpClientRequest.execute(InterceptingHttpClientRequest.java:53)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.delete(NacosRestTemplate.java:151)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpDelete(ServerHttpAgent.java:211)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpDelete(MetricsHttpAgent.java:85)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfigInner(NacosConfigService.java:199)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfig(NacosConfigService.java:126)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:41)
+
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: DELETE, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpDelete] currentServerAddr:http://localhost:8848， err : java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112)
+	at com.alibaba.nacos.common.http.client.InterceptingHttpClientRequest.execute(InterceptingHttpClientRequest.java:53)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.delete(NacosRestTemplate.java:151)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpDelete(ServerHttpAgent.java:211)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpDelete(MetricsHttpAgent.java:85)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfigInner(NacosConfigService.java:199)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfig(NacosConfigService.java:126)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:41)
+
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: DELETE, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpDelete] currentServerAddr:http://localhost:8848， err : java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1240)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112)
+	at com.alibaba.nacos.common.http.client.InterceptingHttpClientRequest.execute(InterceptingHttpClientRequest.java:53)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482)
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.delete(NacosRestTemplate.java:151)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpDelete(ServerHttpAgent.java:211)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpDelete(MetricsHttpAgent.java:85)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfigInner(NacosConfigService.java:199)
+	at com.alibaba.nacos.client.config.NacosConfigService.removeConfig(NacosConfigService.java:126)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:41)
+
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - no available server
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [remove] error, nacos_config.properties, DEFAULT_GROUP, , msg: java.net.ConnectException: no available server
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [check-update] get changed dataId exception
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ClientWorker - longPolling error : 
+java.net.ConnectException: [NACOS HTTP-POST] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:181)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: GET, url: http://localhost:8848/nacos/v1/cs/configs?dataId=nacos_config.properties&group=DEFAULT_GROUP, body: null
+DEBUG main com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+ERROR main com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://localhost:8848， err : connect timed out
+ERROR main com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-localhost_8848] [sub-server] get server config exception, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=
+java.net.ConnectException: [NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:125)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:51)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:274)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:155)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:98)
+	at com.test.test1.Nacos.Nacos.main(Nacos.java:45)
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get from server error, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, msg=ErrCode:500, ErrMsg:[NACOS HTTP-GET] The maximum number of tolerable server reconnection errors has been reached
+WARN main com.alibaba.nacos.client.config.NacosConfigService - [fixed-localhost_8848] [get-config] get snapshot ok, dataId=nacos_config.properties, group=DEFAULT_GROUP, tenant=, config=
+ERROR com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS ConnectException httpPost] currentServerAddr: http://localhost:8848, err : Connection refused: connect
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - HTTP method: POST, url: http://localhost:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=nacos_config.propertiesDEFAULT_GROUP}
+DEBUG com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848 com.alibaba.nacos.client.config.impl.ConfigHttpClientManager - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6121c9d6]
+WARN Thread-0 com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+WARN Thread-0 com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
